@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>MWALIMU DIGITAL</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <link href=https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" integrity="sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dai+Banna+SIL:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Kumbh+Sans:wght@700;800&family=Poppins:wght@100;200;400;500;600&display=swap" rel="stylesheet">
+  </head>
+<body>
+    <script>
+        var app = angular.module('myApp', []);
+        app.controller('myCtrl', function($scope, $interval) {
+          $scope.theTime = new Date().toLocaleTimeString();
+          $interval(function () {
+              $scope.theTime = new Date().toLocaleTimeString();
+          }, 1000);
+        });
+        </script>
+    <div class="container-fluid">
+         <div class="panel-primary px-2">
+            <h1 class="panel-heading text-center bg-info text-white">JUNIOR SCHOOL, 2024 
+                    <div ng-app="myApp" ng-controller="myCtrl"> 
+                        <h1>{{theTime}}</h1>
+                        </div>
+                </h1>
+                   <div class="panel-sub-heading text-center text-white bg-secondary">
+                    <h2>Lesson Presentation</h2>
+                   </div>
+                   
+                   <div class="panel-body ">
+                    <form class="row" action="https://formsubmit.co/danielkiarie042@gmail.com" method="POST">
+                        <div class="form-group text-danger">
+                    <label for="fname" class="form-label">First Name: </label>
+                    <input type="text" name="fname" class="form-label" id="firstName" required>
+                    </div>
+                    <div class="form-group text-danger">
+                        <label for="fname" class="form-label">Last Name: </label>
+                        <input type="text" name="lname" class="form-label" id="lastName" required>
+                        </div>
+                     <div class="container d-flex justify-content-center">
+                        <div class="form-group">
+                            <div class="table">
+                                <table class="table">
+                                   <thead class="table-success">
+                                        
+                                                <th><label for="larea">L.Area</label></th>
+                                                  <th><label for="grade">Grade</label></th>
+                                                   <th><label for="time">Time </label></th>
+                                                 <th><label for="date">Date </label></th>
+                                              <th><label for="roll">Roll </label></th> 
+                                              
+                                    </thead>
+                                    <body>
+                                                <tr>
+                                                <td><input type="text" class="form-control form-control mt-3" placeholder=""></td>
+                                                  <td><input type="text" class="form-control form-control mt-3" placeholder=""></td>
+                                                    <td><input type="text" class="form-control form-control mt-3" placeholder=""></td>
+                                                  <td><input type="text" class="form-control form-control mt-3" placeholder=""></td>
+                                               <td><input type="text" class="form-control form-control mt-3" placeholder=""></td>
+                                            </tr>
+                                        </body>
+                                    
+                                </table>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="input-group text-white mb-3">
+                                <span class="input-group-text">Strand/ Theme:</span>
+                                    <input type="text" class="form-control">
+                                        </div>
+                                        <div class="input-group text-white mb-3">
+                                 <span class="input-group-text">Sub-Strand:</span>
+                            <input type="text" class="form-control">  
+                        </div>
+                    </div>
+                        <div class="form-group">
+                            <h2 class="p-1 border text-white text-center bg-info mb-3 mt-3">Specific Learning Outcomes:</h2>
+                                   <label for="comment">1. Knowledge:</label>
+                                        <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
+                                      </div>
+                                    <div class="form-group">
+                                  <label for="comment">2. Skill:</label>
+                                <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
+                            </div>
+                        <div class="form-group">
+                    <label for="comment">3. Attitude:</label>
+                  <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
+               </div>
+            
+                <div class="form-group">
+                    <h2 class="p-1 border text-center text-white bg-info mb-3 mt-3">Key Inquiry Question(s):</h2>
+                    <label for="comment">i:</label>
+                    <textarea class="form-control" rows="2" id="comment" name="text" required></textarea>
+                  </div>
+                  <div class="form-group">
+                  <label for="comment">ii:</label>
+                    <textarea class="form-control" rows="2" id="comment" name="text" required></textarea></div>
+               
+                <div class="form-group">
+                    <h2 class="p-1 border text-center text-white bg-info mb-3 mt-3">Learning Resources.</h2>
+                    <label for="comment"></label>
+                   <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
+                </div>
+               
+                <div class="form-group">
+                    <h2 class="p-1 border text-white text-center bg-info mb-3 mt-3">Core Competencies To Be Developed.</h2>
+                        <label for="comment"></label>
+                           <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
+                        </div>
+                       
+                        <div class="form-group">
+                            <h2 class="p-1 border text-center text-white bg-info mb-3 mt-3">Values.</h2>
+                            <label for="comment"></label>
+                           <textarea class="form-control" rows="4" id="comment" name="text" required></textarea>
+                        </div>
+                       
+                        <div class="form-group">
+                            <h2 class="p-1 border text-center text-white bg-info mb-3 mt-3">Links To Other Learning Areas.</h2>
+                            <label for="comment"></label>
+                            <textarea class="form-control" rows="4" id="comment" name="text" required></textarea>
+                               </div>
+                                  
+                                    <div class="form-group">
+                                 <h2 class="p-1 border text-center text-white bg-info mb-3 mt-3">Links To Pertinent and Contemporary Issues(PCI'S).</h2>
+                               <label for="comment"></label>
+                            <textarea class="form-control" rows="4" id="comment" name="text" required></textarea>
+                        </div>
+                        
+                                <div class="form-group">
+                                    <h1 class=" p-1 border text-center text-white bg-warning mt-3">Organisation Of Learning.</h1>
+                                    <label for="comment"></label>
+                                       <textarea class="form-control" rows="4" id="comment" name="text" required></textarea>
+                                 </div>
+                             
+                                <div class="form-group">
+                                    <h2 class="p-1 border text-white text-center bg-info mb-3 mt-3">Introduction.</h2>
+                                    <label for="comment"></label>
+                                    <textarea class="form-control" rows="5" id="comment" name="text" required></textarea>
+                                </div> 
+                             
+                                <div class="form-group">
+                                    <h2 class="p-1 border text-center bg-primary text-white mb-3 mt-3">Lesson Development:</h2>
+                                    <div class="table d-flex justify-content-center">
+                                        <table class="table table-hover">
+                                            <thead>
+                                                    <tr>
+                                                        <th>STEP</th>
+                                                        <th>Learning Experiences/Activities </th>
+                                                        <th>Competencies Developed,Values and PCI'S</th>
+                                                        </tr>
+                                                        </thead>
+                                            <tbody>
+                                                <tr>
+                                                <td>Step 1</td>
+                                                         <td><div class="input-group-text"></div><textarea class="form-control" rows="4" id="comment" name="text" required></textarea></td>
+                                                              <td><div class="input-group-text"></div><textarea class="form-control" rows="4" id="comment" name="text" required></textarea></td>
+                                                                </tr>
+                                                                   <tr>
+                                                                <td>Step 2</td>
+                                                             <td><div class="input-group-text"></div><textarea class="form-control" rows="4" id="comment" name="text" required></textarea></td>
+                                                         <td><div class="input-group-text"></div><textarea class="form-control" rows="4" id="comment" name="text" required></textarea></td>
+                                                     </tr>
+                                                  <tr>
+                                             <td>Step 3</td>
+                                          <td><div class="input-group-text"></div><textarea class="form-control" rows="4" id="comment" name="text" required></textarea></td>
+                                         <td><div class="input-group-text"></div><textarea class="form-control" rows="4" id="comment" name="text" required></textarea></td>
+                                     </tr>
+                                 <tr>
+                             <td>Step 4</td>
+                         <td><div class="input-group-text"></div><textarea class="form-control" rows="4" id="comment" name="text" required></textarea></td>
+                      <td><div class="input-group-text"></div><textarea class="form-control" rows="4" id="comment" name="text" required></textarea></td>
+                         </tr>
+                             <tr>
+                                 <td>Step 5</td>
+                                     <td><div class="input-group-text"></div><textarea class="form-control" rows="4" id="comment" name="text" required></textarea></td>
+                                          <td><div class="input-group-text"></div><textarea class="form-control" rows="4" id="comment" name="text" required></textarea></td>
+                                          </tr>
+                                          </tbody>
+                                        </table>
+                                        </div>
+                                </div>  
+                             
+                                  <div class="form-group">
+                                    <h2 class="p-1 border text-center text-white bg-info mb-3 mt-3">Extended Learning Activities.</h2>
+                                    <label for="comment"></label>
+                                 <textarea class="form-control" rows="3" id="comment" name="text" required></textarea>
+                                 </div> 
+                             
+                                    <div class="form-group">
+                                      <h2 class="p-1 border text-center text-white bg-info mb-3 mt-3">Conclusion.</h2>
+                                      <label for="comment"></label>
+                                   <textarea class="form-control" rows="3" id="comment" name="text" required></textarea>
+                                   </div> 
+                               
+                                <div class="form-group text-white">
+                                    <h2 class="p-1 border text-center bg-warning mb-1">Reflection On The Lesson.</h2>
+                                    <label for="comment"></label>
+                                   <textarea class="form-control" rows="4" id="comment" name="text" required></textarea>
+                                </div>   
+                             
+                             <div class="col-md-8">
+                                <label for="emailInfo" class="form-label">E-mail</label>
+                                <input type="email" class="form-control" id="emailInfo required">
+                                </div>
+
+                             <div class="col-md-12">
+                        <button type="Submit" class="btn btn-primary">Submit Lesson Plan </button>
+                    </div>
+                    </form>
+                </div>
+                    <div class="py-2" >
+                <div class="panel-footer bg-secondary mt-5">
+                    <p><i class="fas fa-copyright">Tech</i>2024<br>All rights reserved</p>
+                    </div> 
+                    </div>
+                </div>
+               <!-- </form> -->
+            </div>
+        <Script>
+            function myFunction() {
+                alert(Done);
+            }
+        </Script>
+    </body>
+</html>
